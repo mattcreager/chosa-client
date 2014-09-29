@@ -1,0 +1,35 @@
+b-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+npm-debug.log
+node_modules
+bower_components
+.env
+
+.DS_Store
+
+# vim-related
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+.vimrc
+*~
+
+.build
+.dist
+.tmp
+
+# Coverage reports
+coverage.html

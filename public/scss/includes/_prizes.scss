@@ -1,0 +1,37 @@
+.list.prize-list {
+  li {
+    > div {
+      padding: 15px;
+    }
+    .label-success {
+      display: none;
+      margin: 3px 0;
+    }
+  }
+  .prize-photo {
+    position: relative;
+    padding: 0;
+    .points-badge {
+      display: block;
+      width: 100%;
+      margin-top: -29px;
+      position: relative;
+    }
+  }
+  .prize-achieved {
+    .prize-photo {
+      img { opacity: .8; }
+    }
+    .label-success {
+      display: inline-block;
+    }
+  }
+}
+
+.prize-header {
+
+}
+
+.prize-body {
+  text-align: center;
+}

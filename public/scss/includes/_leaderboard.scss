@@ -1,0 +1,72 @@
+$color-first: darken(#ffc300, 10%);
+$color-second: #8895b4;
+$color-third: #c1721a;
+
+.leaderboard {
+  h5 {
+    text-align: center;
+  }
+  ol {
+    list-style: none;
+    counter-reset: li;
+    padding: 0;
+    margin: 0;
+    li {
+      position: relative;
+      counter-increment: li;
+      padding: 16px;
+      border-bottom: 1px solid $border-color;
+      &:before {
+        position: relative;
+        content: counter(li) '.';
+        margin-right: 5px;
+        z-index: 1;
+      }
+      a {
+        text-decoration: none;
+      }
+      .points-badge {
+        float: right;
+      }
+      .avatar {
+        position: absolute;
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 50%;
+        left: -6px;
+        top: 8px;
+        z-index: 0;
+      }
+    }
+    li:nth-child(-n+3) {
+      margin: 15px;
+      border-radius: $border-radius;
+      font-size: 1.2em;
+      padding: 20px 15px 20px 45px;
+      &:before {
+        content: "";
+      }
+    }
+    li:first-child {
+      background: fade-out($color-first, .8);
+      color: $color-first;
+      * {
+        color: $color-first;
+      }
+    }
+    li:nth-child(2) {
+      background: fade-out($color-second, .8);
+      color: $color-second;
+      * {
+        color: $color-second;
+      }
+    }
+    li:nth-child(3) {
+      background: fade-out($color-third, .8);
+      color: $color-third;
+      * {
+        color: $color-third;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "chosa-client",
+  "version": "0.0.6",
+  "authors": [
+    "Matthew Creager <matthew.creager@gmail.com>"
+  ],
+  "main": "app/index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "snapjs": "~1.9.3"
+  }
+}

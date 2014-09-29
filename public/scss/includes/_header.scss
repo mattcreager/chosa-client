@@ -1,0 +1,43 @@
+.app-header {
+  position: fixed;
+  top: 0;
+  height: $header-height;
+  width: 100%;
+  z-index: 1000;
+  padding: 13px;
+  background: $primary-color;
+  font-size: 18px;
+  color: white;
+
+  a {
+    position: relative;
+    color: white;
+    z-index: 1;
+  }
+
+  h1 {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0 50px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 300;
+    white-space: nowrap;
+  }
+
+  .link-profile {
+    text-align: center;
+  }
+
+  .points-badge {
+    display: block;
+    margin-top: -7px;
+    font-size: 9px;
+    padding: 2px 4px;
+    color: white;
+  }
+
+}

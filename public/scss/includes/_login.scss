@@ -1,0 +1,50 @@
+.login {
+  position: relative;
+  height: 109.6%;
+  padding-top: 50px;
+  margin-top: -$header-height;
+  overflow: hidden;
+  text-align: center;
+  background: $primary-color;
+  color: white;
+  .btn-default {
+    border: 0;
+  }
+  h3 {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid fade-out(white, .8);
+  }
+  form {
+    position: relative;
+    height: 85%;
+    padding: 0;
+    margin: 0 15px;
+    ol {
+      text-align: left;
+      font-size: 1.25em;
+      color: fade-out(white, .5);
+      font-weight: 200;
+      line-height: 1;
+      li {
+        margin-bottom: 1em;
+      }
+    }
+  }
+  .btn {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -30px;
+    padding: 20px;
+  }
+}
+
+.app-logo {
+  display: inline-block;
+  width: 110px;
+  height: 125px;
+  background: url(../img/logo.png) no-repeat;
+  background-size: 100% 100%;
+  @include transform(scale(.75));
+}
